@@ -29,6 +29,7 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 <body>
     <form action="tack.html" method="post">
             <fieldset style="border : 1px black solid; padding: 10px; margin-bottom: 10px;">
+            <legend>namn</legend>
             <label for="name">Namn:</label>
             <input type="text" id="name" name="name" value="namn"><br><br>
             </fieldset>
@@ -52,7 +53,17 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
             </div>
 
             <div style="border : 1px black solid; padding: 10px; margin-bottom: 10px;">
-            <button onclick="window.location.href='tack.html'">Klar</button>
+            <input>
+                <select id="dropdown" name="dropdown">
+                <option value="option1">Alternativ 1</option>
+                <option value="option2">Alternativ 2</option>
+                <option value="option3">Alternativ 3</option>
+            
+                </select><br><br>
+            </div>
+
+            <div style="border : 1px black solid; padding: 10px; margin-bottom: 10px;">
+            <button type="submit">Klar</button>
             </div>
 
             
